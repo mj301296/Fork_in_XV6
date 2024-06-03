@@ -1,0 +1,132 @@
+TEST CASE:
+$ proj1_schdtest
+===== Test case 0: default (RR) scheduler, 3 processes =====
+[3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][5][6][3][4][3][4]
+
+===== Stride scheduling test case 1 =====
+>>> 2 child processes, no transfer.
+[3][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][7][3][7][8][7][3][8][3][8][3][8][3][8][3][8][3][8][3][8][3][8][3][8][3][8][3][8][3][8][3][8][3][8][3][8][3][8][3][8][3][8][3][8][3][8][3][8][8]
+
+===== Stride scheduling test case 2 =====
+>>> 1 child processes, parent tranfers 1/2 of its tickets at the begining.
+Parent: tickets_owned() returned [50]
+Parent: tranfer out -2 tickets, transfer_tickets() returned [-1]
+Parent: tranfer out all tickets, transfer_tickets() returned [-2]
+Parent: tranfer out 1 ticket to pid 1000, transfer_tickets() returned [-3]
+Parent: tranfer out 25 tickets, remaining tickets [25]
+[3][9][9][3][9][9][9][9][3][9][9][9][9][3][9][9][9][9][3][9][9][9][9][3][9][9][9][9][3][9][9][9][9][3][9][9][9][9][3][9][9][9][9][3][9][9][9][9][3][9][9][9][9][3][9][9][9][9][3][9][9][9][9][3][9][9][9][9][3][9][9][9][9][3][9][9][9][9][3][9][9][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3]
+
+$ proj1_forktest 1
+
+Setting child as the fork winner ...
+
+CS550 proj1 fork test ==> 
+
+Trial 0:  child!  parent! 
+Trial 1:  child!  parent! 
+Trial 2:  child!  parent! 
+Trial 3:  child!  parent! 
+Trial 4:  child!  parent! 
+Trial 5:  child!  parent! 
+Trial 6:  child!  parent! 
+Trial 7:  child!  parent! 
+Trial 8:  child!  parent! 
+Trial 9:  child!  parent! 
+Trial 10:  child!  parent! 
+Trial 11:  child!  parent! 
+Trial 12:  child!  parent! 
+Trial 13:  child!  parent! 
+Trial 14:  child!  parent! 
+Trial 15:  child!  parent! 
+Trial 16:  child!  parent! 
+Trial 17:  child!  parent! 
+Trial 18:  child!  parent! 
+Trial 19:  child!  parent! 
+Trial 20:  child!  parent! 
+Trial 21:  child!  parent! 
+Trial 22:  child!  parent! 
+Trial 23:  child!  parent! 
+Trial 24:  child!  parent! 
+Trial 25:  child!  parent! 
+Trial 26:  child!  parent! 
+Trial 27:  child!  parent! 
+Trial 28:  child!  parent! 
+Trial 29:  child!  parent! 
+Trial 30:  child!  parent! 
+Trial 31:  child!  parent! 
+Trial 32:  child!  parent! 
+Trial 33:  child!  parent! 
+Trial 34:  child!  parent! 
+Trial 35:  child!  parent! 
+Trial 36:  child!  parent! 
+Trial 37:  child!  parent! 
+Trial 38:  child!  parent! 
+Trial 39:  child!  parent! 
+Trial 40:  child!  parent! 
+Trial 41:  child!  parent! 
+Trial 42:  child!  parent! 
+Trial 43:  child!  parent! 
+Trial 44:  child!  parent! 
+Trial 45:  child!  parent! 
+Trial 46:  child!  parent! 
+Trial 47:  child!  parent! 
+Trial 48:  child!  parent! 
+Trial 49:  child!  parent! 
+
+$ proj1_forktest 0
+
+Setting parent as the fork winner ...
+
+CS550 proj1 fork test ==> 
+
+Trial 0:  parent!  child! 
+Trial 1:  parent!  child! 
+Trial 2:  parent!  child! 
+Trial 3:  parent!  child! 
+Trial 4:  parent!  child! 
+Trial 5:  parent!  child! 
+Trial 6:  parent!  child! 
+Trial 7:  parent!  child! 
+Trial 8:  parent!  child! 
+Trial 9:  parent!  child! 
+Trial 10:  parent!  child! 
+Trial 11:  parent!  child! 
+Trial 12:  parent!  child! 
+Trial 13:  parent!  child! 
+Trial 14:  parent!  child! 
+Trial 15:  parent!  child! 
+Trial 16:  parent!  child! 
+Trial 17:  parent!  child! 
+Trial 18:  parent!  child! 
+Trial 19:  parent!  child! 
+Trial 20:  parent!  child! 
+Trial 21:  parent!  child! 
+Trial 22:  parent!  child! 
+Trial 23:  parent!  child! 
+Trial 24:  parent!  child! 
+Trial 25:  parent!  child! 
+Trial 26:  parent!  child! 
+Trial 27:  parent!  child! 
+Trial 28:  parent!  child! 
+Trial 29:  parent!  child! 
+Trial 30:  parent!  child! 
+Trial 31:  parent!  child! 
+Trial 32:  parent!  child! 
+Trial 33:  parent!  child! 
+Trial 34:  parent!  child! 
+Trial 35:  parent!  child! 
+Trial 36:  parent!  child! 
+Trial 37:  parent!  child! 
+Trial 38:  parent!  child! 
+Trial 39:  parent!  child! 
+Trial 40:  parent!  child! 
+Trial 41:  parent!  child! 
+Trial 42:  parent!  child! 
+Trial 43:  parent!  child! 
+Trial 44:  parent!  child! 
+Trial 45:  parent!  child! 
+Trial 46:  parent!  child! 
+Trial 47:  parent!  child! 
+Trial 48:  parent!  child! 
+Trial 49:  parent!  child! 
+---------------------------------------------------------------------------------------------------------------------
